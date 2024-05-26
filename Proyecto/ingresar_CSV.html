@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos_ingresar.css">
+    <title>ingresar_CSV</title>
+</head>
+<body>
+    <h1>Agregar Datos y Descargar</h1>
+    <form id="dataForm">
+        <label for="nameInput">Nombre:</label>
+        <input type="text" id="nameInput" required>
+        <label for="emailInput">Email:</label>
+        <input type="email" id="emailInput" required>
+        <label for="ageInput">Edad:</label>
+        <input type="number" id="ageInput" required>
+        <button type="submit">Agregar</button>
+    </form>
+    
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los datos agregados aparecerán aquí -->
+        </tbody>
+    </table>
+    
+    <button id="downloadBtn">Descargar CSV</button>
+</body>
+<script src="app_ingresar.js"></script>
+</html>
